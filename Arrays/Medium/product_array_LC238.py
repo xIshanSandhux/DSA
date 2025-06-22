@@ -5,13 +5,14 @@ class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         product=1
         answer=[]
+        b = False
 
         if 0 in nums:
-
+            b = True
             print (nums.index(0))
 
         for x in nums:
-
+            
             if x!=0:
                 product = product*x
         

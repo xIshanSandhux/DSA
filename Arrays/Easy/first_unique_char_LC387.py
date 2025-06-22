@@ -15,10 +15,6 @@ class Solution:
                 r = key
                 print("firt unique char:",r)
                 return s.index(r)
-        #         break
-        # for x in range(len(s)):
-        #     if s[x]==r:
-        #         return x
 
         return -1
 

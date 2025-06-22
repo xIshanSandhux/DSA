@@ -13,13 +13,13 @@ class Solution:
             if x in dic1:
                 dic1[x] += 1
 
-        print(dic1)
+        # print(dic1)
         for x in nums2:
             if x not in dic2:
                 dic2[x] = 0
             if x in dic2:
                 dic2[x] += 1
-        print(dic2)
+        # print(dic2)
 
         for key,value in dic1.items():
             if key in dic2:
@@ -30,9 +30,9 @@ class Solution:
                     dic2[key]-=1
                     
 
-        print(r)
-        print(dic1)
-        print(dic2)
+        # print(r)
+        # print(dic1)
+        # print(dic2)
 
         return r
     
