@@ -6,8 +6,6 @@ class Solution:
         firstPointer = 0
         lastPointer = len(numbers)-1
         sumList = []
-        # print(numbers[firstPointer])
-        # print(numbers[lastPointer])
 
         while firstPointer<lastPointer:
             sum = numbers[lastPointer]+numbers[firstPointer]

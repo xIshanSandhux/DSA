@@ -6,11 +6,11 @@ class Solution:
         """
         firstPointer = 0
         lastPointer = len(s)-1
-        beforestr = ""
-        afterstr = ""
+        # beforestr = ""
+        # afterstr = ""
 
 
-        beforestr = "".join(s)
+        # beforestr = "".join(s)
 
         while firstPointer<lastPointer:
             temp = s[firstPointer]
@@ -19,11 +19,11 @@ class Solution:
             firstPointer+=1
             lastPointer-=1
 
-        afterstr = "".join(s)
+        # afterstr = "".join(s)
 
-        print("before string: ", beforestr)
-        print("after string: ", afterstr)
-        print("----------------------------------")
+        # print("before string: ", beforestr)
+        # print("after string: ", afterstr)
+        # print("----------------------------------")
 
 s = Solution()
 
