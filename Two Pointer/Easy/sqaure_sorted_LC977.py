@@ -2,20 +2,28 @@ from typing import List
 
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        result = [0] * len(nums)
-        left = 0
-        right = len(nums) - 1
-        pos = len(nums) - 1  
+        firstPointer = 0
+        lastPointer = len(nums)-1
+        position = len(nums)-1
+        sortedList = [0]* (len(nums))
 
-        while left <= right:
-            left_sq = nums[left] ** 2
-            right_sq = nums[right] ** 2
-            if left_sq > right_sq:
-                result[pos] = left_sq
-                left += 1
+        while firstPointer<=lastPointer:
+            num1 = nums[firstPointer]**2
+            num2 = nums[lastPointer]**2
+            print(f"num1: {num1} | num2: {num2}")
+            
+            if num1>num2:
+                sortedList[position] = num1
+                firstPointer+=1
             else:
-                result[pos] = right_sq
-                right -= 1
-            pos -= 1
+                sortedList[position] = num2
+                lastPointer-=1
+            print(sortedList[position])
+            position-=1
+        
 
-        return result
+        return sortedList
+    
+s = Solution()
+print(s.sortedSquares([-4,-1,0,3,10]))
+print(s.sortedSquares([-7,-3,2,3,11]))
