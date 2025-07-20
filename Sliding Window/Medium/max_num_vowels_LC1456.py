@@ -2,11 +2,7 @@ class Solution:
     def maxVowels(self, s: str, k: int) -> int:
         maxVow = 0
         curVow =0
-        vowelSet = set()
-        vowels = "aeiou"
-
-        for x in vowels:
-            vowelSet.add(x)
+        vowelSet = set("aeiou")
 
         for x in range(k):
             if s[x] in vowelSet:
